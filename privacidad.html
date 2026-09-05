@@ -54,7 +54,7 @@
     <div class="topbar">
         <img src="icon.png" alt="IndovexApp">
         <span class="name">IndovexApp</span>
-        <a href="index.html">&larr; Inicio</a>
+        <a href="index.html">← Inicio</a>
     </div>
 </header>
 <div class="wrap">
@@ -62,7 +62,7 @@
     <div class="doc">
         <div class="eyebrow">Protección de datos · Ley N° 18.331</div>
         <h1>Política de Privacidad y Protección de Datos Personales</h1>
-        <div class="meta">Versión 1.6 · Julio 2026</div>
+        <div class="meta">Versión 1.7 · Septiembre 2026</div>
         <div class="meta">Victor Alejandro Rios · indovexapp.com</div>
         <div class="divider"></div>
         <p>Victor Alejandro Rios, responsable del servicio IndovexApp («el Proveedor»), con domicilio en la República Oriental del Uruguay, elabora la presente Política de Privacidad en cumplimiento de la Ley N° 18.331 de Protección de Datos Personales («LPDP»), su Decreto reglamentario N° 414/009, y las disposiciones de la Unidad Reguladora y de Control de Datos Personales (URCDP).</p>
@@ -82,7 +82,7 @@
             <li>Nombre completo y cargo del usuario.</li>
             <li>Dirección de correo electrónico y contraseña (almacenada de forma cifrada).</li>
             <li>Nombre y datos de la empresa: razón social y domicilio; RUT (opcional, requerido únicamente para la emisión de comprobantes fiscales).</li>
-            <li>Número de teléfono de contacto (opcional).</li>
+            <li>Número de teléfono de contacto (opcional). Cuando se carga, el administrador del Cliente puede activarlo para el envío de alertas operativas por WhatsApp.</li>
             <li>Información de facturación vinculada al plan de suscripción.</li>
         </ul>
         <h3>2.2 Datos generados por el uso del Servicio</h3>
@@ -90,6 +90,7 @@
             <li>Registros de acceso y autenticación (fecha y hora de inicio de sesión), gestionados por el proveedor de autenticación e infraestructura.</li>
             <li>Datos operativos: inventario, órdenes de mantenimiento, activos y cualquier información ingresada por el usuario en el sistema.</li>
             <li>Registro de auditoría de las operaciones realizadas (creación, modificación y baja de registros), con identificación del usuario y fecha.</li>
+            <li>Identificador técnico del dispositivo (token de notificaciones push), únicamente cuando el usuario habilita las notificaciones.</li>
             <li>Preferencias de configuración y uso de funcionalidades.</li>
         </ul>
         <h3>2.3 Datos técnicos procesados por la infraestructura</h3>
@@ -143,11 +144,13 @@
         <p>El Proveedor no vende, alquila ni comercializa los datos personales de sus clientes. Los datos podrán ser comunicados o procesados únicamente en los siguientes supuestos:</p>
         <p>Encargados del tratamiento, que prestan servicios técnicos necesarios para la operación del Servicio bajo acuerdos de confidencialidad y protección de datos:</p>
         <ul>
-            <li><strong>Supabase Inc.</strong> — almacenamiento y procesamiento de la base de datos (todos los datos).</li>
-            <li><strong>Cloudflare Inc.</strong> — hosting de la aplicación web, DNS y proxy/CDN; procesa tráfico de sesión y direcciones IP.</li>
+            <li><strong>Supabase Inc.</strong> — almacenamiento y procesamiento de la base de datos y de los archivos del Servicio (todos los datos operativos y personales ingresados en la plataforma).</li>
+            <li><strong>GitHub, Inc. (Microsoft Corporation)</strong> — alojamiento de los archivos estáticos del sitio institucional y de la aplicación web. Procesa la dirección IP del usuario al momento de descargar la aplicación; no accede a los datos operativos ingresados en el Servicio, que se comunican directamente con la base de datos.</li>
+            <li><strong>Cloudflare Inc.</strong> — gestión de DNS y proxy/CDN del dominio; procesa tráfico de sesión y direcciones IP para el enrutamiento y la protección de las comunicaciones.</li>
+            <li><strong>Google LLC (Firebase Cloud Messaging)</strong> — envío de notificaciones push a los dispositivos de los usuarios; procesa únicamente el identificador técnico del dispositivo (token de notificaciones), cuando el usuario habilita esta función.</li>
             <li><strong>MercadoPago</strong> — procesamiento de pagos; únicamente datos de facturación.</li>
-            <li><strong>Meta Platforms Inc.</strong> — envío de notificaciones por WhatsApp mediante la WhatsApp Business Platform; únicamente el número de teléfono cuando el usuario lo habilita.</li>
-            <li><strong>Zoho Corporation</strong> — casillas de correo y envío de correos transaccionales; procesa direcciones de correo electrónico.</li>
+            <li><strong>Meta Platforms Inc.</strong> — envío de notificaciones operativas por WhatsApp (por ejemplo, alertas de stock) mediante la WhatsApp Business Platform; procesa únicamente el número de teléfono de los usuarios que el administrador del Cliente activa expresamente para recibir dichas alertas.</li>
+            <li><strong>Zoho Corporation</strong> — a través de ZeptoMail, envío de correos transaccionales del sistema (altas, recuperación de contraseña, notificaciones); y a través de Zoho Mail, gestión de las casillas de correo del Proveedor. Procesa direcciones de correo electrónico.</li>
         </ul>
         <p>Asimismo, los datos podrán ser comunicados a:</p>
         <ul>
